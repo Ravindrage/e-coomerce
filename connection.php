@@ -14,9 +14,9 @@ else
 }
 echo '<BR>';
 
-
+/*
 mysqli_query($conn,"INSERT INTO `user` (`id`, `username`, `password`, `email`) 
                            VALUES ('2', 'admin1', 'admin1', 'admin1@example.com');
             ");
-
+*/
 ?>
