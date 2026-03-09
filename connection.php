@@ -14,9 +14,40 @@ else
 }
 echo '<BR>';
 
-/*
-mysqli_query($conn,"INSERT INTO `user` (`id`, `username`, `password`, `email`) 
-                           VALUES ('2', 'admin1', 'admin1', 'admin1@example.com');
-            ");
-*/
+
+
+
+
+
+
+
 ?>
+
+
+<script>
+function myfunction()
+{
+	document.getElementById("furniture").style.css.display="block";
+	document.getElementById("office").style.css.display="none";
+	document.getElementById("Kitchen").style.css.display="none";
+}
+
+function myfunction1()
+{
+	document.getElementById("furniture").style.css.display="none";
+	document.getElementById("office").style.css.display="none";
+	document.getElementById("Kitchen").style.css.display="block";
+}
+
+function myfunction2()
+{
+	document.getElementById("furniture").style.css.display="none";
+	document.getElementById("office").style.css.display="block";
+	document.getElementById("Kitchen").style.css.display="n";
+}
+</script>
+
+
+<a href="#" onclick="myfunction()">Furniture </a>
+<a href="#" onclick="myfunction1()">Kitchen </a>
+<a href="#" onclick="myfunction3()">Office</a>

@@ -1,22 +1,89 @@
 
+<html>
+
+<body>
+
+<p id="demo"> </p>
+<p id="demo1"> none</p>
+<p id="demo2"> none</p>
+<p id="demo3"> none</p>
+
+<script>
+
+//alert("Hello");
+console.log("Hello");
+const cars = ["Maruti","vsolvo","Futuner"];
+document.getElementById("demo").innerHTML = cars ; 
+
+/////Function Array in javascript
+let size = cars.Length;
+
+console.log(size);
+
+/////Array search 
+
+//1)  find, indexOf
+
+const numbers = [4,7,15,19,30]
+
+let position = cars.lastIndexOf("Maruti")+1;
+
+document.getElementById("demo1").innerHTML = "Volvo number id " + position
+
+///Array sort 
+
+cars.sort();
+
+document.getElementById("demo2").innerHTML = cars ; 
+
+//Array Iteration Methods
+
+// 1) Array forEach 
+// 2) Array map()
+// 3) Array filter()
+
+const numbers2 = numbers.map(myFunction);
+
+function myFunction(value,index,array)
+{
+	return value+5 ; 
+}
+
+document.getElementById("demo3").innerHTML = numbers2 ; 
+
+
+</script>
+
+</body>
+</html>
 
 
 
-<?php 
+
+<?php /*
+echo '<br>'; echo '<br>';
 
 $variable = 20.35 ; 
 $VARIABLE = 20 ; 
 
+mysqli_query($conn,"INSERT INTO `user` (`id`, `username`, `password`, `email`) 
+                           VALUES ('6', 'admin1123', 'admin1123', 'admin1@example.com');
 
-function add() { 
+            ");
 
-echo $string = "RAj"; 
-print $string ;
+//function add() { 
+
+echo $string = "RAj";  echo '<br>';
+print $string ; echo '<br>';
 var_dump($string);
 
-}
+//}
 
 $string ; 
+
+
+echo '<br>';
+
 
 include("connection.php");
 
@@ -29,7 +96,7 @@ include("connection.php");
 6) Abstraction
 7) Constructor & Destructor
 */
-
+/*
 
 //////// Creating Class 
 Class book {
@@ -121,8 +188,8 @@ class square extends shapes
 ////// Constructor & Destructor
 
 
-echo phpversion();
+//echo phpversion();
 ?>
 
-body 
+
 
